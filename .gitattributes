@@ -1,0 +1,16 @@
+# 统一按 LF 存储，避免不同系统上产生无意义的行尾差异
+* text=auto eol=lf
+
+# Windows 批处理文件必须保留 CRLF 检出，否则 cmd 解析可能出错
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制文件不做任何行尾转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.docx binary
+*.pptx binary
+*.xlsx binary
+*.pdf binary
